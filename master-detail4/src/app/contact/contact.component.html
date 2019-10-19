@@ -1,0 +1,10 @@
+<h2>My Contacts</h2>
+<ul class="contacts">
+  <li *ngFor = "let c of contacts" > 
+     <a routerLink ="/detail/{{c.id}}">
+      <span class="badge">{{c.id}}</span>{{c.name}}
+   </a>
+   </ul>
+ 
+
+<app-contact-detail ></app-contact-detail>

@@ -1,0 +1,9 @@
+<div *ngIf="contact">
+    <h2>{{contact.name | uppercase}} Details</h2>
+    <div>
+            Name <input type="text" [(ngModel)]=contact.name/>
+    </div>
+
+    <button (click)="goBack()">go back</button>
+</div>
+
